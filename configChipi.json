@@ -1,0 +1,34 @@
+{
+  "DESIGN_NAME": "chipi",
+  "VERILOG_FILES": [
+    "dir::src/add_renorm.v",
+    "dir::src/chipi.v",
+    "dir::src/control_fsm.v",
+    "dir::src/exp_mant_logic.v",
+    "dir::src/fp16_sum_res_pipe.v",
+    "dir::src/fractional_divider.v",
+    "dir::src/leading_zero_norm.v",
+    "dir::src/myreg.v",
+    "dir::src/op_sign_logic.v",
+    "dir::src/piso_16.v",
+    "dir::src/sipo_32.v",
+    "dir::src/rounder.v",
+    "dir::src/sum_res_pp.v"
+  ],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+
+  "RST_PORT": "rst",
+
+  "FP_CORE_UTIL": 40,
+
+  "FP_PDN_VOFFSET": 7,
+  "FP_PDN_HOFFSET": 7,
+  "FP_PDN_SKIPTRIM": true,
+
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "PNR_SDC_FILE": "dir::src/constraints.sdc",
+  "SIGNOFF_SDC_FILE": "dir::src/constraints.sdc"
+}
