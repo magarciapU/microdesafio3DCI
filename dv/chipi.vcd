@@ -1,0 +1,1006 @@
+$date
+	Fri Nov 21 07:26:02 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_chipi $end
+$var wire 1 ! serial_out $end
+$var wire 1 " ready $end
+$var reg 1 # add_sub $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$var reg 1 & serial_in $end
+$var reg 16 ' serial_recv [15:0] $end
+$var reg 1 ( sipo_enable $end
+$scope module dut $end
+$var wire 1 # add_sub $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var wire 1 & serial_in $end
+$var wire 1 ( sipo_enable $end
+$var wire 16 ) y_parallel [15:0] $end
+$var wire 16 * x2 [15:0] $end
+$var wire 16 + x1 [15:0] $end
+$var wire 1 , sum_enable $end
+$var wire 32 - sipo_data [31:0] $end
+$var wire 1 ! serial_out $end
+$var wire 1 " ready $end
+$var wire 1 . piso_enable $end
+$scope module fp_add_inst $end
+$var wire 1 # add_sub $end
+$var wire 1 $ clk $end
+$var wire 1 " ready $end
+$var wire 1 % rst $end
+$var wire 16 / x1 [15:0] $end
+$var wire 16 0 x2 [15:0] $end
+$var wire 16 1 y [15:0] $end
+$var wire 1 2 sign_r $end
+$var wire 22 3 seg_reg1_out [21:0] $end
+$var wire 33 4 seg_reg0_out [32:0] $end
+$var wire 16 5 result [15:0] $end
+$var wire 16 6 reg_x2_out [15:0] $end
+$var wire 16 7 reg_x1_out [15:0] $end
+$var wire 1 8 reg_add_sub_out $end
+$var wire 1 9 op_r $end
+$var wire 8 : mantisa_r2 [7:0] $end
+$var wire 8 ; mantisa_r1 [7:0] $end
+$var wire 12 < mantisa_r0 [11:0] $end
+$var wire 8 = mantisa_r [7:0] $end
+$var wire 11 > mant_x2 [10:0] $end
+$var wire 11 ? mant_x1 [10:0] $end
+$var wire 8 @ exp_r2 [7:0] $end
+$var wire 8 A exp_r1 [7:0] $end
+$var wire 8 B exp_r [7:0] $end
+$var wire 1 C end4 $end
+$var wire 1 D end3 $end
+$var wire 1 E end2 $end
+$var wire 1 F end1 $end
+$var wire 1 , en $end
+$var wire 8 G as_exp [7:0] $end
+$scope module add_renorm0 $end
+$var wire 8 H exp [7:0] $end
+$var wire 12 I mantisa [11:0] $end
+$var wire 8 J mantisa_r [7:0] $end
+$var wire 11 K mant_i [10:0] $end
+$var wire 8 L exp_r [7:0] $end
+$var wire 8 M exp_i [7:0] $end
+$scope module rounder0 $end
+$var wire 8 N exp_i [7:0] $end
+$var wire 11 O mant_i [10:0] $end
+$var wire 8 P mant_shift_output [7:0] $end
+$var wire 8 Q mant_o [7:0] $end
+$var wire 9 R mant_adder_output [8:0] $end
+$var wire 8 S exp_o [7:0] $end
+$var wire 8 T exp_adder_output [7:0] $end
+$var reg 9 U mant_rounded [8:0] $end
+$upscope $end
+$upscope $end
+$scope module exp_mant_logic0 $end
+$var wire 1 V sel $end
+$var wire 11 W mantisa_b_pp [10:0] $end
+$var wire 11 X mantisa_b [10:0] $end
+$var wire 11 Y mantisa_a_pp [10:0] $end
+$var wire 11 Z mantisa_a [10:0] $end
+$var wire 8 [ exp_diff [7:0] $end
+$var wire 1 \ b_is_not_zero $end
+$var wire 16 ] b [15:0] $end
+$var wire 8 ^ as_exp [7:0] $end
+$var wire 1 _ a_is_not_zero $end
+$var wire 16 ` a [15:0] $end
+$scope module pp0 $end
+$var wire 8 a exp_diff_i [7:0] $end
+$var wire 8 b mant_i [7:0] $end
+$var wire 11 c mant_o [10:0] $end
+$var reg 11 d i_mant_o [10:0] $end
+$upscope $end
+$scope module pp1 $end
+$var wire 8 e exp_diff_i [7:0] $end
+$var wire 8 f mant_i [7:0] $end
+$var wire 11 g mant_o [10:0] $end
+$var reg 11 h i_mant_o [10:0] $end
+$upscope $end
+$upscope $end
+$scope module leading_zero_norm0 $end
+$var wire 8 i exp [7:0] $end
+$var wire 11 j mantisa [10:0] $end
+$var wire 8 k mant_o [7:0] $end
+$var wire 8 l exp_o [7:0] $end
+$var reg 8 m exp_r [7:0] $end
+$var reg 8 n mantisa_r [7:0] $end
+$scope module rounder0 $end
+$var wire 8 o exp_i [7:0] $end
+$var wire 11 p mant_i [10:0] $end
+$var wire 8 q mant_shift_output [7:0] $end
+$var wire 8 r mant_o [7:0] $end
+$var wire 9 s mant_adder_output [8:0] $end
+$var wire 8 t exp_o [7:0] $end
+$var wire 8 u exp_adder_output [7:0] $end
+$var reg 9 v mant_rounded [8:0] $end
+$upscope $end
+$upscope $end
+$scope module op_sign_logic0 $end
+$var wire 1 w add_sub $end
+$var wire 11 x mantisa_a [10:0] $end
+$var wire 11 y mantisa_b [10:0] $end
+$var wire 1 z s_a $end
+$var wire 1 { s_b $end
+$var wire 12 | sub_r2 [11:0] $end
+$var wire 12 } sub_r1 [11:0] $end
+$var wire 1 ~ sel $end
+$var wire 12 !" add_r1 [11:0] $end
+$var reg 12 "" mantisa_r [11:0] $end
+$var reg 1 9 op_r $end
+$var reg 1 2 sign_r $end
+$upscope $end
+$scope module reg1en $end
+$var wire 1 $ clk $end
+$var wire 1 #" en $end
+$var wire 1 % rst $end
+$var wire 1 , d $end
+$var parameter 32 $" N $end
+$var reg 1 F q $end
+$upscope $end
+$scope module reg2en $end
+$var wire 1 $ clk $end
+$var wire 1 F d $end
+$var wire 1 %" en $end
+$var wire 1 % rst $end
+$var parameter 32 &" N $end
+$var reg 1 E q $end
+$upscope $end
+$scope module reg3en $end
+$var wire 1 $ clk $end
+$var wire 1 E d $end
+$var wire 1 '" en $end
+$var wire 1 % rst $end
+$var parameter 32 (" N $end
+$var reg 1 D q $end
+$upscope $end
+$scope module reg4en $end
+$var wire 1 $ clk $end
+$var wire 1 D d $end
+$var wire 1 )" en $end
+$var wire 1 % rst $end
+$var parameter 32 *" N $end
+$var reg 1 C q $end
+$upscope $end
+$scope module reg_add_sub $end
+$var wire 1 $ clk $end
+$var wire 1 # d $end
+$var wire 1 % rst $end
+$var wire 1 , en $end
+$var parameter 32 +" N $end
+$var reg 1 8 q $end
+$upscope $end
+$scope module seg_reg0 $end
+$var wire 1 $ clk $end
+$var wire 33 ," d [32:0] $end
+$var wire 1 F en $end
+$var wire 1 % rst $end
+$var parameter 32 -" N $end
+$var reg 33 ." q [32:0] $end
+$upscope $end
+$scope module seg_reg1 $end
+$var wire 1 $ clk $end
+$var wire 22 /" d [21:0] $end
+$var wire 1 E en $end
+$var wire 1 % rst $end
+$var parameter 32 0" N $end
+$var reg 22 1" q [21:0] $end
+$upscope $end
+$scope module x1reg $end
+$var wire 1 $ clk $end
+$var wire 16 2" d [15:0] $end
+$var wire 1 % rst $end
+$var wire 1 , en $end
+$var parameter 32 3" N $end
+$var reg 16 4" q [15:0] $end
+$upscope $end
+$scope module x2reg $end
+$var wire 1 $ clk $end
+$var wire 16 5" d [15:0] $end
+$var wire 1 % rst $end
+$var wire 1 , en $end
+$var parameter 32 6" N $end
+$var reg 16 7" q [15:0] $end
+$upscope $end
+$scope module yreg $end
+$var wire 1 $ clk $end
+$var wire 16 8" d [15:0] $end
+$var wire 1 D en $end
+$var wire 1 % rst $end
+$var parameter 32 9" N $end
+$var reg 16 :" q [15:0] $end
+$upscope $end
+$upscope $end
+$scope module fsm_inst $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var wire 1 ( sipo_enable $end
+$var wire 1 " sum_ready $end
+$var parameter 3 ;" IDLE $end
+$var parameter 3 <" LOAD $end
+$var parameter 3 =" OUT $end
+$var parameter 3 >" RETURN $end
+$var parameter 3 ?" SUM $end
+$var reg 3 @" next_state [2:0] $end
+$var reg 1 . piso_enable $end
+$var reg 3 A" state [2:0] $end
+$var reg 1 , sum_enable $end
+$upscope $end
+$scope module piso_inst $end
+$var wire 1 $ clk $end
+$var wire 16 B" d [15:0] $end
+$var wire 1 . load $end
+$var wire 1 % rst $end
+$var reg 1 ! serial_out $end
+$var reg 16 C" shift [15:0] $end
+$upscope $end
+$scope module sipo_inst $end
+$var wire 1 $ clk $end
+$var wire 1 ( en $end
+$var wire 1 % rst $end
+$var wire 1 & serial_in $end
+$var reg 32 D" q [31:0] $end
+$upscope $end
+$upscope $end
+$scope task send_serial_32 $end
+$var reg 32 E" data [31:0] $end
+$var integer 32 F" i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 ?"
+b100 >"
+b11 ="
+b1 <"
+b0 ;"
+b10000 9"
+b10000 6"
+b10000 3"
+b10110 0"
+b100001 -"
+b1 +"
+b1 *"
+b1 ("
+b1 &"
+b1 $"
+$end
+#0
+$dumpvars
+bx F"
+bx E"
+b0 D"
+b0 C"
+b0 B"
+b0 A"
+b0 @"
+b0 :"
+b0 8"
+b0 7"
+b0 5"
+b0 4"
+b0 2"
+b0 1"
+b0 /"
+b0 ."
+b0 ,"
+1)"
+1'"
+1%"
+1#"
+b0 ""
+b0 !"
+0~
+b0 }
+b0 |
+0{
+0z
+b0 y
+b0 x
+0w
+b0 v
+b1 u
+b0 t
+b1 s
+b0 r
+b0 q
+b0 p
+b0 o
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+b0 e
+b0 d
+b0 c
+b0 b
+b0 a
+b0 `
+0_
+b0 ^
+b0 ]
+0\
+b0 [
+b0 Z
+b0 Y
+b0 X
+b0 W
+0V
+b0 U
+b1 T
+b0 S
+b1 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+0F
+0E
+0D
+0C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+09
+08
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+02
+b0 1
+b0 0
+b0 /
+0.
+b0 -
+0,
+b0 +
+b0 *
+b0 )
+0(
+b0 '
+0&
+1%
+0$
+0#
+0"
+0!
+$end
+#5000
+1$
+#10000
+0$
+#15000
+1$
+#20000
+0$
+#25000
+1$
+#30000
+0$
+#35000
+b1 @"
+1(
+0%
+b11111 F"
+b1000001001000000100000010100000 E"
+1$
+#40000
+0$
+#45000
+b1 A"
+b11110 F"
+1$
+#50000
+0$
+#55000
+1&
+b11101 F"
+1$
+#60000
+0$
+#65000
+b1000000000000000 +
+b1000000000000000 /
+b1000000000000000 2"
+b10000000000000000000000000000000 -
+b10000000000000000000000000000000 D"
+0&
+b11100 F"
+1$
+#70000
+0$
+#75000
+b100000000000000 +
+b100000000000000 /
+b100000000000000 2"
+b1000000000000000000000000000000 -
+b1000000000000000000000000000000 D"
+b11011 F"
+1$
+#80000
+0$
+#85000
+b10000000000000 +
+b10000000000000 /
+b10000000000000 2"
+b100000000000000000000000000000 -
+b100000000000000000000000000000 D"
+b11010 F"
+1$
+#90000
+0$
+#95000
+b1000000000000 +
+b1000000000000 /
+b1000000000000 2"
+b10000000000000000000000000000 -
+b10000000000000000000000000000 D"
+b11001 F"
+1$
+#100000
+0$
+#105000
+b100000000000 +
+b100000000000 /
+b100000000000 2"
+b1000000000000000000000000000 -
+b1000000000000000000000000000 D"
+b11000 F"
+1$
+#110000
+0$
+#115000
+b10000000000 +
+b10000000000 /
+b10000000000 2"
+b100000000000000000000000000 -
+b100000000000000000000000000 D"
+1&
+b10111 F"
+1$
+#120000
+0$
+#125000
+b1000001000000000 +
+b1000001000000000 /
+b1000001000000000 2"
+b10000010000000000000000000000000 -
+b10000010000000000000000000000000 D"
+0&
+b10110 F"
+1$
+#130000
+0$
+#135000
+b100000100000000 +
+b100000100000000 /
+b100000100000000 2"
+b1000001000000000000000000000000 -
+b1000001000000000000000000000000 D"
+b10101 F"
+1$
+#140000
+0$
+#145000
+b10000010000000 +
+b10000010000000 /
+b10000010000000 2"
+b100000100000000000000000000000 -
+b100000100000000000000000000000 D"
+1&
+b10100 F"
+1$
+#150000
+0$
+#155000
+b1001000001000000 +
+b1001000001000000 /
+b1001000001000000 2"
+b10010000010000000000000000000000 -
+b10010000010000000000000000000000 D"
+0&
+b10011 F"
+1$
+#160000
+0$
+#165000
+b100100000100000 +
+b100100000100000 /
+b100100000100000 2"
+b1001000001000000000000000000000 -
+b1001000001000000000000000000000 D"
+b10010 F"
+1$
+#170000
+0$
+#175000
+b10010000010000 +
+b10010000010000 /
+b10010000010000 2"
+b100100000100000000000000000000 -
+b100100000100000000000000000000 D"
+b10001 F"
+1$
+#180000
+0$
+#185000
+b1001000001000 +
+b1001000001000 /
+b1001000001000 2"
+b10010000010000000000000000000 -
+b10010000010000000000000000000 D"
+b10000 F"
+1$
+#190000
+0$
+#195000
+b100100000100 +
+b100100000100 /
+b100100000100 2"
+b1001000001000000000000000000 -
+b1001000001000000000000000000 D"
+b1111 F"
+1$
+#200000
+0$
+#205000
+b10010000010 +
+b10010000010 /
+b10010000010 2"
+b100100000100000000000000000 -
+b100100000100000000000000000 D"
+b1110 F"
+1$
+#210000
+0$
+#215000
+b1001000001 +
+b1001000001 /
+b1001000001 2"
+b10010000010000000000000000 -
+b10010000010000000000000000 D"
+1&
+b1101 F"
+1$
+#220000
+0$
+#225000
+b1000000000000000 *
+b1000000000000000 0
+b1000000000000000 5"
+b1000000100100000 +
+b1000000100100000 /
+b1000000100100000 2"
+b10000001001000001000000000000000 -
+b10000001001000001000000000000000 D"
+0&
+b1100 F"
+1$
+#230000
+0$
+#235000
+b100000000000000 *
+b100000000000000 0
+b100000000000000 5"
+b100000010010000 +
+b100000010010000 /
+b100000010010000 2"
+b1000000100100000100000000000000 -
+b1000000100100000100000000000000 D"
+b1011 F"
+1$
+#240000
+0$
+#245000
+b10000000000000 *
+b10000000000000 0
+b10000000000000 5"
+b10000001001000 +
+b10000001001000 /
+b10000001001000 2"
+b100000010010000010000000000000 -
+b100000010010000010000000000000 D"
+b1010 F"
+1$
+#250000
+0$
+#255000
+b1000000000000 *
+b1000000000000 0
+b1000000000000 5"
+b1000000100100 +
+b1000000100100 /
+b1000000100100 2"
+b10000001001000001000000000000 -
+b10000001001000001000000000000 D"
+b1001 F"
+1$
+#260000
+0$
+#265000
+b100000000000 *
+b100000000000 0
+b100000000000 5"
+b100000010010 +
+b100000010010 /
+b100000010010 2"
+b1000000100100000100000000000 -
+b1000000100100000100000000000 D"
+b1000 F"
+1$
+#270000
+0$
+#275000
+b10000000000 *
+b10000000000 0
+b10000000000 5"
+b10000001001 +
+b10000001001 /
+b10000001001 2"
+b100000010010000010000000000 -
+b100000010010000010000000000 D"
+b111 F"
+1$
+#280000
+0$
+#285000
+b1000001000000000 *
+b1000001000000000 0
+b1000001000000000 5"
+b1000000100 +
+b1000000100 /
+b1000000100 2"
+b10000001001000001000000000 -
+b10000001001000001000000000 D"
+1&
+b110 F"
+1$
+#290000
+0$
+#295000
+b100000100000000 *
+b100000100000000 0
+b100000100000000 5"
+b1000000100000010 +
+b1000000100000010 /
+b1000000100000010 2"
+b10000001000000100100000100000000 -
+b10000001000000100100000100000000 D"
+0&
+b101 F"
+1$
+#300000
+0$
+#305000
+b10000010000000 *
+b10000010000000 0
+b10000010000000 5"
+b100000010000001 +
+b100000010000001 /
+b100000010000001 2"
+b1000000100000010010000010000000 -
+b1000000100000010010000010000000 D"
+1&
+b100 F"
+1$
+#310000
+0$
+#315000
+b1001000001000000 *
+b1001000001000000 0
+b1001000001000000 5"
+b1010000001000000 +
+b1010000001000000 /
+b1010000001000000 2"
+b10100000010000001001000001000000 -
+b10100000010000001001000001000000 D"
+0&
+b11 F"
+1$
+#320000
+0$
+#325000
+b100100000100000 *
+b100100000100000 0
+b100100000100000 5"
+b101000000100000 +
+b101000000100000 /
+b101000000100000 2"
+b1010000001000000100100000100000 -
+b1010000001000000100100000100000 D"
+b10 F"
+1$
+#330000
+0$
+#335000
+b10010000010000 *
+b10010000010000 0
+b10010000010000 5"
+b10100000010000 +
+b10100000010000 /
+b10100000010000 2"
+b101000000100000010010000010000 -
+b101000000100000010010000010000 D"
+b1 F"
+1$
+#340000
+0$
+#345000
+b1001000001000 *
+b1001000001000 0
+b1001000001000 5"
+b1010000001000 +
+b1010000001000 /
+b1010000001000 2"
+b10100000010000001001000001000 -
+b10100000010000001001000001000 D"
+b0 F"
+1$
+#350000
+0$
+#355000
+b100100000100 *
+b100100000100 0
+b100100000100 5"
+b101000000100 +
+b101000000100 /
+b101000000100 2"
+b1010000001000000100100000100 -
+b1010000001000000100100000100 D"
+b11111111111111111111111111111111 F"
+1$
+#360000
+0$
+#365000
+b10010000010 *
+b10010000010 0
+b10010000010 5"
+b10100000010 +
+b10100000010 /
+b10100000010 2"
+b10 @"
+b101000000100000010010000010 -
+b101000000100000010010000010 D"
+0(
+1$
+#370000
+0$
+#375000
+1,
+b10 A"
+1$
+#380000
+0$
+#385000
+b10101000001000001000001000 ,"
+1\
+b1000001000 >
+b1000001000 X
+1_
+b1000001000 Y
+b1000001000 c
+b1000001000 d
+b1000001000 W
+b1000001000 g
+b1000001000 h
+b10000010000 ?
+b10000010000 Z
+b10000010 f
+b1010 G
+b1010 ^
+b10000010 b
+b1 [
+b1 a
+b1 e
+1V
+1F
+b10010000010 6
+b10010000010 ]
+b10010000010 7"
+b10100000010 7
+b10100000010 `
+b10100000010 4"
+1$
+#390000
+0$
+#395000
+b11000011000 <
+b11000011000 ""
+1~
+b1100001100000001010 /"
+b11000011000 !"
+b1000001000 }
+b110111111000 |
+b1000001000 y
+b10000010000 x
+b10101000001000001000001000 4
+b10101000001000001000001000 ."
+1E
+1$
+#400000
+0$
+#405000
+b10101000011 5
+b10101000011 8"
+b11000011 =
+b11000011 :
+b11000011 J
+b11000011 Q
+b1010 A
+b1010 m
+b11000011 ;
+b11000011 n
+b11000011 U
+b11000011 k
+b11000011 r
+b11000011 P
+b11000100 R
+b11000011 v
+b1010 B
+b11000011 q
+b1010 @
+b1010 L
+b1010 S
+b11000011000 K
+b11000011000 O
+b11000100 s
+b1011 T
+b1010 M
+b1010 N
+b1010 l
+b1010 t
+b1010 H
+b11000011000 I
+b1011 u
+b1010 i
+b1010 o
+b11000011000 j
+b11000011000 p
+1D
+b1100001100000001010 3
+b1100001100000001010 1"
+1$
+#410000
+0$
+#415000
+b11 @"
+b10101000011 )
+b10101000011 1
+b10101000011 :"
+b10101000011 B"
+1"
+1C
+1$
+#420000
+0$
+#425000
+1.
+0,
+b100 @"
+b11 A"
+1$
+#430000
+0$
+#435000
+0.
+b0 @"
+b100 A"
+0F
+b10101000011 C"
+1$
+#440000
+0$
+#445000
+b101010000110 C"
+0E
+b0 A"
+1$
+#450000
+0$
+#455000
+0D
+b1010100001100 C"
+1$
+#460000
+0$
+#465000
+b10101000011000 C"
+0"
+0C
+1$
+#470000
+0$
+#475000
+b101010000110000 C"
+1$
+#480000
+0$
+#485000
+b1010100001100000 C"
+1$
+#490000
+0$
+#495000
+b101000011000000 C"
+1!
+1$
+#500000
+0$
+#505000
+b1010000110000000 C"
+0!
+b1 '
+1$
+#510000
+0$
+#515000
+b100001100000000 C"
+1!
+b10 '
+1$
+#520000
+0$
+#525000
+b1000011000000000 C"
+0!
+b101 '
+1$
+#530000
+0$
+#535000
+b110000000000 C"
+1!
+b1010 '
+1$
+#540000
+0$
+#545000
+b1100000000000 C"
+0!
+b10101 '
+1$
+#550000
+0$
+#555000
+b11000000000000 C"
+b101010 '
+1$
+#560000
+0$
+#565000
+b110000000000000 C"
+b1010100 '
+1$
+#570000
+0$
+#575000
+b1100000000000000 C"
+b10101000 '
+1$
